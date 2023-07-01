@@ -1,0 +1,79 @@
+p {
+  font-family: Lato;
+}
+
+/* Customize theme */
+.azure-theme {
+  --igc-background-color: linear-gradient(0deg,
+      #d5deeb 0%,
+      #becce2 30%,
+      #ced6e0 100%);
+  --igc-accent-color: #c1d0de91;
+  --igc-text-color: #000;
+  --igc-border-color: #c1d0de;
+  --igc-button-text: #000;
+  --igc-splitter-background: #c1d0ded5;
+  --igc-flyout-shadow-color: #c1d0de7e;
+  --igc-joystick-icon-color-active: #000;
+  --igc-joystick-border-color: #c1d0de;
+  --igc-tab-background-active: #c1d0de;
+  --igc-pane-content-background: #f1f1f1;
+  --igc-floating-pane-border-color: #c1d0de;
+  --igc-context-menu-color-active: #000;
+  --igc-active-color: #000;
+  --igc-line-bottom-active-color: #c1d0de;
+  --igc-line-left-active-color: #c1d0de;
+  --igc-resize-line-active-color: #c1d0de;
+  --igc-splitter-handle: #fff;
+}
+
+.orange-theme {
+  --igc-background-color: linear-gradient(0deg, #f3994c 0%, #f5b277 100%);
+  --igc-accent-color: #f293409c;
+  --igc-text-color: #000;
+  --igc-border-color: #f29240;
+  --igc-button-text: #000;
+  --igc-splitter-background: #f29240;
+  --igc-flyout-shadow-color: #f293407c;
+  --igc-joystick-icon-color-active: #000;
+  --igc-joystick-border-color: #f29240;
+  --igc-tab-background-active: #f29340e0;
+  --igc-pane-content-background: #f1f1f1;
+  --igc-floating-pane-border-color: #f29240;
+  --igc-context-menu-color-active: #000;
+  --igc-active-color: #000;
+}
+
+.reef-theme {
+  --igc-background-color: linear-gradient(0deg, #88c485 0%, #bae4ba 100%);
+  --igc-accent-color: #93c4859c;
+  --igc-text-color: #000;
+  --igc-border-color: #93c485;
+  --igc-button-text: #000;
+  --igc-splitter-background: #93c485;
+  --igc-flyout-shadow-color: #93c48573;
+  --igc-joystick-icon-color-active: #000;
+  --igc-joystick-border-color: #93c485;
+  --igc-tab-background-active: #93c485;
+  --igc-pane-content-background: #f1f1f1;
+  --igc-floating-pane-border-color: #93c485;
+  --igc-context-menu-color-active: #000;
+  --igc-active-color: #000;
+}
+
+.turquoise-theme {
+  --igc-background-color: linear-gradient(0deg, #60b9d1 0%, #83daf1 100%);
+  --igc-accent-color: #3b9fbb9c;
+  --igc-text-color: #000;
+  --igc-border-color: #3ba0bb;
+  --igc-button-text: #000;
+  --igc-splitter-background: #3ba0bb;
+  --igc-flyout-shadow-color: #3b9fbb77;
+  --igc-joystick-icon-color-active: #000;
+  --igc-joystick-border-color: #3ba0bb;
+  --igc-tab-background-active: #3ba0bb;
+  --igc-pane-content-background: #f1f1f1;
+  --igc-floating-pane-border-color: #3ba0bb;
+  --igc-context-menu-color-active: #000;
+  --igc-active-color: #000;
+}
