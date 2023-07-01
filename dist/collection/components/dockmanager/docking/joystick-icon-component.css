@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: var(--igc-joystick-icon-color, var(--igc-text-color, rgba(0, 0, 0, 0.72)));
+  background: var(--igc-joystick-background, var(--igc-accent-color, #fff));
+  border: 1px solid var(--igc-joystick-border-color, var(--igc-accent-color, #fff));
+}
+:host.inner-top {
+  border-bottom: none;
+}
+:host.inner-start {
+  border-right: none;
+}
+:host.inner-end {
+  border-left: none;
+}
+:host.inner-bottom {
+  border-top: none;
+}
+:host.inner-center {
+  border: 1px solid var(--igc-joystick-background, var(--igc-accent-color, #fff));
+}
+:host:hover {
+  background: var(--igc-joystick-background-active, var(--igc-accent-color, #fff));
+  color: var(--igc-joystick-icon-color-active, #000);
+}

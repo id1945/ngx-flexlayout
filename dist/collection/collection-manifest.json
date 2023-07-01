@@ -1,0 +1,31 @@
+{
+  "entries": [
+    "./components/button/button-component.js",
+    "./components/context-menu/context-menu-component.js",
+    "./components/dockmanager/panes/splitter-component.js",
+    "./components/dockmanager/dockmanager-component.js",
+    "./components/dockmanager/docking/joystick-icon-component.js",
+    "./components/dockmanager/docking/joystick-indicator-component.js",
+    "./components/dockmanager/docking/root-docking-indicator-component.js",
+    "./components/dockmanager/pane-navigator/pane-navigator-component.js",
+    "./components/dockmanager/panes/content-pane-component.js",
+    "./components/dockmanager/panes/document-host-component.js",
+    "./components/dockmanager/panes/floating-pane-component.js",
+    "./components/dockmanager/panes/pane-header-component.js",
+    "./components/dockmanager/panes/resizer-component.js",
+    "./components/dockmanager/panes/split-pane-component.js",
+    "./components/dockmanager/panes/unpinned-pane-header-component.js",
+    "./components/icon/icon-component.js",
+    "./components/sample-component/sample-component.js",
+    "./components/tabs/tab-header-component.js",
+    "./components/tabs/tab-panel-component.js",
+    "./components/tabs/tabs-component.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.12.1",
+    "typescriptVersion": "4.3.5"
+  },
+  "collections": [],
+  "bundles": []
+}

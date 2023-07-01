@@ -1,0 +1,18 @@
+:host {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicators-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  box-sizing: border-box;
+  pointer-events: all;
+}
+.indicators-container--doc-host {
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
+}

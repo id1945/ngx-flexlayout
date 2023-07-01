@@ -1,0 +1,33 @@
+.dark-theme {
+  --igc-background-color: #2E3138;
+  --igc-accent-color: #15181ed8;
+  --igc-text-color: #ffffffb3;
+  --igc-border-color: #202327;
+  --igc-button-text: 'inherit';
+  --igc-splitter-background: #414141d8;
+  --igc-flyout-shadow-color: #00000061;
+  --igc-joystick-icon-color-active: #fff;
+  --igc-joystick-border-color: #15181ed8;
+  --igc-tab-background-active: #202327;
+  --igc-pane-content-background: #202327;
+  --igc-floating-pane-border-color: #15181eb2;
+  --igc-context-menu-color-active: #fff;
+  --igc-disabled-color: #ffffff80;
+}
+
+.light-theme {
+    --igc-background-color: #E5E7E9;
+    --igc-accent-color: #fff;
+    --igc-text-color: rgba(0, 0, 0, .72);
+    --igc-border-color: #F3F5F7;
+    --igc-button-text: 'inherit';
+    --igc-splitter-background: #D3D6D9;
+    --igc-flyout-shadow-color: rgba(0, 0, 0, .08);
+    --igc-joystick-icon-color-active: #000;
+    --igc-joystick-border-color: #D3D6D9;
+    --igc-tab-background-active: #F3F5F7;
+    --igc-pane-content-background: #F3F5F7;
+    --igc-floating-pane-border-color: #fff;
+    --igc-context-menu-color-active: #000;
+    --igc-disabled-color: rgba(0, 0, 0, .38);
+}

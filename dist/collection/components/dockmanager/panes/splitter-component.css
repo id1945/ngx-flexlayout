@@ -1,0 +1,56 @@
+:host {
+  position: relative;
+  display: flex;
+  flex: 0 0 4px;
+  box-sizing: border-box;
+  pointer-events: all;
+}
+
+.splitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: ew-resize;
+  background: var(--igc-splitter-background, #D3D6D9);
+  --resize-handle-width: 2px;
+  --resize-handle-height: 80px;
+  outline-style: none;
+}
+.splitter:not(.splitter--custom-handle)::after {
+  position: absolute;
+  content: "";
+  background: var(--igc-splitter-handle, var(--igc-accent-color, #fff));
+  top: 50%;
+  left: 50%;
+  width: var(--resize-handle-width);
+  height: var(--resize-handle-height);
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 1px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.splitter:focus-within {
+  background-color: var(--igc-active-color, cornflowerblue);
+}
+.splitter--vertical {
+  cursor: ns-resize;
+}
+.splitter--vertical:not(.splitter--custom-handle)::after {
+  width: var(--resize-handle-height);
+  height: var(--resize-handle-width);
+}
+
+.splitter-ghost {
+  position: absolute;
+  cursor: ew-resize;
+  opacity: 0.3;
+  background: black;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.splitter-ghost--vertical {
+  cursor: ns-resize;
+}

@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  user-select: none;
+  font-size: 12px;
+  padding: 4px;
+  margin-right: 4px;
+  color: var(--igc-pinned-header-text, var(--igc-text-color, rgba(0, 0, 0, 0.72)));
+  background: var(--igc-pinned-header-background, var(--igc-accent-color, #fff));
+  cursor: pointer;
+  outline-style: none;
+}
+
+:host([part~=vertical]) {
+  writing-mode: tb-rl;
+  margin-right: unset;
+  margin-bottom: 4px;
+}
+
+:host([part~=active]) {
+  color: var(--igc-active-color, cornflowerblue);
+  box-shadow: inset 0 -2px 0 0 var(--igc-active-color, cornflowerblue);
+}
+
+:host([part~=vertical][part~=active]) {
+  box-shadow: inset 2px 0 0 0 var(--igc-active-color, cornflowerblue);
+}
+
+:host([part~=disabled]) {
+  pointer-events: none;
+  color: var(--igc-disabled-color, rgba(0, 0, 0, 0.38));
+}

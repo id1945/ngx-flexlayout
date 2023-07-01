@@ -1,0 +1,46 @@
+button {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  min-width: 10px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: var(--igc-button-text, rgba(0, 0, 0, 0.72));
+  cursor: pointer;
+  outline-style: none;
+  font-size: 14px;
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  opacity: 0.7;
+  transition: background 0.25s ease-out, opacity 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+
+:host([disabled]) {
+  pointer-events: none;
+}
+
+:host {
+  display: flex;
+}
+
+button {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+button:hover {
+  opacity: 1;
+}
+button:focus {
+  background: var(--igc-accent-color, #fff);
+  box-shadow: inset 0 0 0 1px var(--igc-active-color, cornflowerblue);
+  opacity: 1;
+}
+button[disabled] {
+  opacity: 0.54;
+}

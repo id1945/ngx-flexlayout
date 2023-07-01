@@ -1,0 +1,80 @@
+:host([part~=hover-preview-close][part~=selected]) ::slotted(span), :host([part~=hover-preview-close]:hover) ::slotted(span) {
+  max-width: calc(100% - 18px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+:host {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0.5em;
+  user-select: none;
+  color: var(--igc-tab-text, var(--igc-text-color, rgba(0, 0, 0, 0.72)));
+  background: var(--igc-tab-background, var(--igc-background-color, #E5E7E9));
+  border-style: solid;
+  border-color: var(--igc-tab-border-color, var(--igc-border-color, #F3F5F7));
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 0;
+  border-right-width: 1px;
+  font-size: 0.75em;
+  line-height: 2;
+  outline-style: none;
+}
+:host igc-icon-component svg {
+  width: 17px;
+  height: 17px;
+}
+:host * + igc-button-component {
+  margin-left: 0.5em;
+}
+
+:host([part~=selected]) {
+  color: var(--igc-tab-text-active, var(--igc-text-color, rgba(0, 0, 0, 0.72)));
+  background: var(--igc-tab-background-active, var(--igc-border-color, #F3F5F7));
+  border-color: var(--igc-tab-border-color-active, var(--igc-border-color, #F3F5F7));
+}
+
+:host([part~=bottom]) {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+:host([part~=bottom]):first-of-type {
+  border-left: none;
+}
+
+:host([part~=active]) {
+  box-shadow: inset 0 -2px 0 0 var(--igc-active-color, cornflowerblue);
+  color: var(--igc-active-color, cornflowerblue);
+}
+:host([part~=active]) igc-icon-component {
+  color: var(--igc-icon-active-color, var(--igc-active-color, cornflowerblue));
+}
+
+:host([part~=disabled]) {
+  pointer-events: none;
+  color: var(--igc-disabled-color, rgba(0, 0, 0, 0.38));
+}
+
+:host(:hover) [part*=floating] {
+  opacity: 1;
+}
+
+[part*=floating] {
+  position: absolute;
+  inset-inline-end: 0;
+  background: inherit;
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+[part*=selected] {
+  opacity: 1;
+}

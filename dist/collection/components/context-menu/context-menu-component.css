@@ -1,0 +1,54 @@
+:host {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10002;
+  pointer-events: none;
+}
+:host igc-icon-component svg {
+  width: 17px;
+  height: 17px;
+}
+:host igc-icon-component {
+  margin-left: 8px;
+}
+
+[part=menu-content] {
+  position: absolute;
+  visibility: hidden;
+  color: var(--igc-context-menu-color, var(--igc-text-color, rgba(0, 0, 0, 0.72)));
+  background: var(--igc-context-menu-background, var(--igc-accent-color, #fff));
+  border: 1px solid var(--igc-context-menu-background, var(--igc-accent-color, #fff));
+  pointer-events: all;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08), 0 12px 17px 2px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.26);
+  box-sizing: border-box;
+}
+
+[part~=menu-item] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  font-size: 0.75em;
+  line-height: 1.7;
+  cursor: pointer;
+  transition: background 0.25s ease-out, color 0.25s ease-out;
+  outline-style: none;
+}
+[part~=menu-item]:hover {
+  background: var(--igc-context-menu-background-active, var(--igc-border-color, #F3F5F7));
+  color: var(--igc-context-menu-color-active, #000);
+}
+[part~=menu-item]:focus {
+  background: var(--igc-context-menu-background-active, var(--igc-border-color, #F3F5F7));
+  color: var(--igc-context-menu-color-active, #000);
+}
+
+[part~=disabled] {
+  pointer-events: none;
+  color: var(--igc-disabled-color, rgba(0, 0, 0, 0.38));
+}

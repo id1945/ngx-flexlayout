@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  box-sizing: border-box;
+  overflow: auto;
+  flex-grow: 1;
+  height: 100%;
+  color: var(--igc-pane-content-text, var(--igc-text-color, rgba(0, 0, 0, 0.72)));
+  background-color: var(--igc-pane-content-background, var(--igc-border-color, #F3F5F7));
+}
+
+:host([part~=disabled]) {
+  pointer-events: none;
+  color: var(--igc-disabled-color, rgba(0, 0, 0, 0.38));
+}

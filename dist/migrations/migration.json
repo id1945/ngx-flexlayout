@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "migration-01": {
+      "version": "1.0.4-beta",
+      "description": "Updates Ignite UI Dock Manager to the latest version.",
+      "factory": "./base-migration"
+    }
+  }
+}

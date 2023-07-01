@@ -1,0 +1,15 @@
+:host {
+  --min-pane-size: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  min-width: var(--min-pane-size);
+  min-height: var(--min-pane-size);
+  box-sizing: border-box;
+  color: var(--igc-dock-text, var(--igc-text-color, rgba(0, 0, 0, 0.72)));
+  background: var(--igc-dock-background, var(--igc-background-color, #E5E7E9));
+  pointer-events: all;
+  border: 1px solid var(--igc-floating-pane-border-color, var(--igc-border-color, #F3F5F7));
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
+  z-index: 0;
+}

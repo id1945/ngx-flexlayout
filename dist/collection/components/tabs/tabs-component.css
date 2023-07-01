@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-width: 0px;
+  min-height: 0px;
+}
+
+.tabs {
+  display: flex;
+  overflow: hidden;
+  min-height: 32px;
+  max-height: 32px;
+  background: var(--igc-dock-background, var(--igc-background-color, #E5E7E9));
+}
+.tabs--top {
+  padding-top: 8px;
+}
+.tabs--top .tab-headers-container--wrapped {
+  flex-wrap: wrap;
+}
+.tabs--bottom {
+  padding-bottom: 8px;
+}
+.tabs--bottom .tab-headers-container--wrapped {
+  flex-wrap: wrap-reverse;
+}
+
+.content {
+  flex-grow: 1;
+  height: 100%;
+  overflow: auto;
+}
+
+.tab-headers-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.tab-header-icon-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-left: 8px;
+  padding-right: 8px;
+}

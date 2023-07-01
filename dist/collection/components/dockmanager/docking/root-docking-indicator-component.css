@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  box-sizing: border-box;
+  align-self: center;
+  pointer-events: all;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  color: var(--igc-joystick-icon-color, var(--igc-text-color, rgba(0, 0, 0, 0.72)));
+  background: var(--igc-joystick-background, var(--igc-accent-color, #fff));
+  transition: color 0.25s ease-out, background 0.25s ease-out;
+  border: 1px solid var(--igc-joystick-border-color, var(--igc-accent-color, #fff));
+}
+:host:hover {
+  color: var(--igc-joystick-icon-color-active, #000);
+  background: var(--igc-joystick-background-active, var(--igc-accent-color, #fff));
+}

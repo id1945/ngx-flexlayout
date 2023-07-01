@@ -1,0 +1,22 @@
+:host {
+  --min-pane-size: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-width: var(--min-pane-size);
+  min-height: var(--min-pane-size);
+  box-sizing: border-box;
+  pointer-events: all;
+}
+
+:host(:focus) {
+  outline-style: none;
+}
+
+:host([part~=disabled]:not([part~=single-floating])),
+:host([part~=disabled]) > slot:not([name]) {
+  pointer-events: none;
+}

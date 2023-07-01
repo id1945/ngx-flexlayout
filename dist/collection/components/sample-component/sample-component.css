@@ -1,0 +1,112 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ngx-flexlayout {
+  background-color: gray;
+}
+
+ngx-flexlayout::part(pane-header) {
+  background-color: white;
+}
+
+ngx-flexlayout::part(splitter) {
+  flex: 0 0 15px;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+ngx-flexlayout::part(splitter-base) {
+  background: transparent;
+  pointer-events: none;
+}
+
+ngx-flexlayout::part(splitter-base)::after {
+  content: none;
+}
+
+ngx-flexlayout::part(content-pane) {
+  border-radius: 10px;
+}
+
+ngx-flexlayout::part(context-menu) {
+  background-color: wheat;
+}
+
+ngx-flexlayout::part(floating-window) {
+  border-color: red;
+}
+
+ngx-flexlayout::part(pane-header) {
+  display: none;
+}
+
+ngx-flexlayout::part(document-tab-header) {
+  display: none;
+}
+
+ngx-flexlayout::part(tab-strip-area) {
+  display: none;
+}
+
+ngx-flexlayout::part(document-panel) {
+  padding: 10px;
+}
+
+ngx-flexlayout::part(root-docking-indicator) {
+  background-color: red;
+}
+
+ngx-flexlayout::part(docking-indicator) {
+  background-color: chocolate;
+}
+
+ngx-flexlayout::part(docking-preview) {
+  background-color: chocolate;
+}
+
+ngx-flexlayout::part(unpinned-pane-header) {
+  background-color: lightgreen;
+}
+
+ngx-flexlayout::part(pane-header-actions) {
+  background-color: lightgreen;
+}
+
+ngx-flexlayout::part(floating-pane-header-actions) {
+  background-color: lightpink;
+}
+
+ngx-flexlayout::part(floating-window-header-actions) {
+  visibility: collapse;
+  pointer-events: none;
+}
+
+ngx-flexlayout::part(tab-strip-actions) {
+  visibility: collapse;
+  pointer-events: none;
+} 
+
+ngx-flexlayout::part(tabs-more-button) {
+  color: red;
+}
+
+ngx-flexlayout::part(context-menu-item) {
+  background-color: greenyellow;
+}
+
+ngx-flexlayout::part(context-menu-content) {
+  background-color: coral;
+  padding: 5px;
+}
+
+ngx-flexlayout::part(tabs-more-menu-content) {
+  background-color: plum;
+  padding: 5px;
+}
+
+ngx-flexlayout::part(tabs-more-menu-item) {
+  background-color: cyan;
+} */
